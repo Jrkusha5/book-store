@@ -7,6 +7,7 @@ const app= express()
 //middlewares
 
 app.use('/books', router)
+app.use(express.json());
 
 
 mongoose.connect
